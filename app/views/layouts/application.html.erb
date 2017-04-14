@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Matthooks</title>
+    <title><%= yield(:title) %> | @hooksie</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://use.fontawesome.com/2267d3d8ff.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
+    <style type="text/css">
+    .jumbo {
+        margin-top:3em;
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    .jumbo h1 {
+        font-size: 3em;
+    }
+    .profile {
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        display: inline-block;
+        overflow: hidden;
+    }
+    .social a {
+        display: inline-block;
+        margin: 0.5em;
+        font-size: 2.5em;
+        color: #000000;
+    }
+    </style>
   </head>
 
   <body>
+    <div class="ui container">
     <%= yield %>
+    </div>
+    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
   </body>
 </html>
