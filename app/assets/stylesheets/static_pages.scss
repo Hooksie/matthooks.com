@@ -1,3 +1,7 @@
+$primary-color: #0197eb;
+$profile-width: 250px;
+$profile-height: 250px;
+
 .jumbo {
     margin-top:3em;
     margin-bottom: 1.5em;
@@ -9,21 +13,21 @@
 }
 
 .profile {
-    border: 10px solid #0197eb;
-    width: 250px;
-    height: 250px;
+    border: 10px solid $primary-color;
+    width: $profile-width;
+    height: $profile-height;
     border-radius: 10%;
     display: inline-block;
     overflow: hidden;
 
     img {
-      width: 250px;
-      height: 250px;
+      height: $profile-width;
+      width: $profile-height;
     }
 }
 
 .shebang span.name {
-    color: #0197eb;
+    color: $primary-color;
     font-weight: bold;
 }
 
@@ -34,5 +38,9 @@
         color: #000000;
         display: inline-block;
         margin: 0.5em;
+
+        &:hover {
+            color: $primary-color;
+        }
     }
 }
