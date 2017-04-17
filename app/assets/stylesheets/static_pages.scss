@@ -1,3 +1,38 @@
-// Place all the styles related to the StaticPages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbo {
+    margin-top:3em;
+    margin-bottom: 1.5em;
+    text-align: center;
+
+    h1 {
+        font-size: 3em;
+    }
+}
+
+.profile {
+    border: 10px solid #0197eb;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+}
+
+.shebang span.name {
+    color: #0197eb;
+    font-weight: bold;
+}
+
+.social {
+    font-size: 2.5em;
+
+    a {
+        color: #000000;
+        display: inline-block;
+        margin: 0.5em;
+    }
+}
